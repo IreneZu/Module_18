@@ -1,0 +1,14 @@
+{% extends "fourth_task/menu.html" %}
+
+{% block content %}
+    <ul>
+        {% for i in buildings %}
+            <li>
+                {{ i }}
+                <button>Характеристики</button>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+
+

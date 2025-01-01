@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %} {{title}} {% endblock %}
+    </title>
+</head>
+<body>
+    <header>
+        {% block pagename %}
+            <h1>{{ header }}</h1>
+        {% endblock %}
+    </header>
+    <nav>
+        {% block menu %}
+            <a href="/"><h3>Главная</h3></a>
+            <a href="/mkd"><h3>Многоквартирные дома (МКД)</h3></a>
+            <a href=/UO><h3>Управляющая организация</h3></a>
+            <br>
+        {% endblock %}
+    </nav>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+</body>
+</html>
