@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from task5.forms import UserRegister
+from .forms import UserRegister
 
 # Create your views here.
 def sign_up_by_html(request):
