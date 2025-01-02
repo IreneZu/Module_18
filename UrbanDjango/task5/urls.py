@@ -1,0 +1,9 @@
+
+from django.urls import path
+from .views import sign_up_by_html, sign_up_by_django
+
+urlpatterns = [
+    # task5:
+    path('', sign_up_by_html),
+    path('django_sign_up/', sign_up_by_django),
+]

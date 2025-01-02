@@ -50,7 +50,7 @@ def sign_up_by_django (request):
             info['error'] = 'Пользователь уже существует'
         else:
             resp = f'<h1>Приветствуем, {name} !</h1>'
-            return HttpResponse(resp, content_type="text/html")
+            return HttpResponse(resp)
     else:
 
         form = UserRegister()
